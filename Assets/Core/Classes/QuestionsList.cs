@@ -11,7 +11,7 @@ namespace Assets.Core.Classes
         private List<Question> _questions = new List<Question>() 
         { 
             new Question("Самая тонкая природная нить", "Паутина"), 
-            new Question("Волки это единственные животныеб способные на ...", "Месть"),
+            new Question("Волки это единственные животные способные на ...", "Месть"),
             new Question("По форме чего отличают хищников и их жертв?", "Зрачок"),
             new Question("У одного из 200 людей есть дополнительное ...", "Ребро"),
             new Question("Что замедляют прыщи?", "Старение")

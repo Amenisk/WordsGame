@@ -16,5 +16,10 @@ namespace Assets.Core.Classes
             QuestionText = questionText;
             AnswerText = answerText;
         }
+
+        public Question()
+        {
+
+        }
     }
 }
