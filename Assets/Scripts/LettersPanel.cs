@@ -71,7 +71,7 @@ public class LettersPanel : MonoBehaviour
             {
                 b.GetComponentInChildren<Text>().text = btn.GetComponentInChildren<Text>().text;
                 btn.interactable = false;
-                btn.transform.Translate(0, 1000, 0);
+                btn.transform.Translate(0, 10000, 0);
                 return;
             }
         }

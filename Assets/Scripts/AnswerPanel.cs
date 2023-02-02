@@ -44,7 +44,7 @@ public class AnswerPanel : MonoBehaviour
 
             btn.GetComponentInChildren<Text>().text = "";
             button.interactable = true;
-            button.transform.Translate(0, -1000, 0);
+            button.transform.Translate(0, -10000, 0);
         }
         catch { }
     }
