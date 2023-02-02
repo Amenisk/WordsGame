@@ -26,7 +26,7 @@ public class LettersPanel : MonoBehaviour
             var btn = Instantiate(_lettersBtnPrefab, _lettersPanel);
             if (!ArrayUtility.Contains(array, i))
             {
-                btn.GetComponentInChildren<Text>().text = ((char)Random.RandomRange('À', 'ß')).ToString();
+                btn.GetComponentInChildren<Text>().text = ((char)Random.Range('À', 'ß')).ToString();
             }
             else
             {
@@ -49,7 +49,7 @@ public class LettersPanel : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            number = Random.RandomRange(0, 31);
+            number = Random.Range(0, 31);
             if (!ArrayUtility.Contains(array, number))
             {
                 array[i] = number;
