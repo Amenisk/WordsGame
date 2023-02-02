@@ -4951,7 +4951,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 914911013}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: CloseShop
         m_Mode: 1
