@@ -18,7 +18,8 @@ public class AnswerPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var question = gameCreation.Game.CurrentQuestion;
+        Game game = gameCreation.Game;
+        Question question = game.CurrentQuestion;
         _question.GetComponent<Text>().text = question.QuestionText;
 
         for (int i = 0; i < question.AnswerText.Length; i++)

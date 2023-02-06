@@ -17,7 +17,7 @@ public class LettersPanel : MonoBehaviour
     void Start()
     {
         Game game = gameCreation.Game;
-        var question = game.CurrentQuestion;
+        Question question = game.CurrentQuestion;
 
         int countLetters = 0;
         var array = GetRandomIntArray(question.AnswerText.Length);

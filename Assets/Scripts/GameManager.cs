@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CloseShop();
     }
 
     // Update is called once per frame
@@ -33,22 +32,5 @@ public class GameManager : MonoBehaviour
     public void OpenAward()
     {
         SceneManager.LoadScene("AwardScene");
-    }
-
-    public void OpenShop()
-    {
-        if (shop != null)
-        {
-            shop.SetActive(true);
-        }
-    }
-
-    public void CloseShop()
-    {
-        shop = GameObject.Find("Shop");
-        if(shop != null)
-        {
-            shop.SetActive(false);
-        }
     }
 }
