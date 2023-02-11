@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Assets.Core.Classes;
 using Assets.Scripts;
 using System.Linq;
+using System.Threading.Tasks;
 
 public class AnswerPanel : MonoBehaviour
 {
@@ -13,13 +14,17 @@ public class AnswerPanel : MonoBehaviour
     [SerializeField] private GameObject _lettersBtnPrefab;
     [SerializeField] private GameObject _question;
     [SerializeField] private Transform _lettersPanel;
+    [SerializeField] private GameObject _questionPanel;
+    [SerializeField] private GameObject _rightAnswerPanel;
+    [SerializeField] private GameObject _wrongAnswerPanel;
     public GameCreation gameCreation;
 
     // Start is called before the first frame update
     void Start()
     {
-        Game game = gameCreation.Game;
-        Question question = game.CurrentQuestion;
+        _rightAnswerPanel.SetActive(false);
+        _wrongAnswerPanel.SetActive(false);
+        Question question = gameCreation.Game.CurrentQuestion;
         _question.GetComponent<Text>().text = question.QuestionText;
 
         for (int i = 0; i < question.AnswerText.Length; i++)
@@ -33,7 +38,7 @@ public class AnswerPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        CheckAnswer();
     }
 
     public void ReturnButton(Button btn)
@@ -46,7 +51,31 @@ public class AnswerPanel : MonoBehaviour
             btn.GetComponentInChildren<Text>().text = "";
             button.interactable = true;
             button.transform.Translate(0, -10000, 0);
+            gameCreation.Game.CountLetters--;
         }
         catch { }
+    }
+
+    private async Task CheckAnswer()
+    {
+        await Task.Delay(1000);
+        if (gameCreation.Game.CheckAnswer())
+        {
+            string answer = "";
+            foreach(var button in _answerPanel.GetComponentsInChildren<Button>())
+            {
+                answer += button.GetComponentInChildren<Text>().text;
+            }
+
+            if(answer == gameCreation.Game.CurrentQuestion.AnswerText.ToUpper())
+            {
+                _rightAnswerPanel.SetActive(true);
+            }
+            else
+            {
+                _wrongAnswerPanel.SetActive(true);
+            }
+        }
+
     }
 }

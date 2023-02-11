@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Assets.Core.Classes;
 using UnityEditor;
 using Assets.Scripts;
+using System.Threading.Tasks;
 
 public class LettersPanel : MonoBehaviour
 {
@@ -16,8 +17,7 @@ public class LettersPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Game game = gameCreation.Game;
-        Question question = game.CurrentQuestion;
+        Question question = gameCreation.Game.CurrentQuestion;
 
         int countLetters = 0;
         var array = GetRandomIntArray(question.AnswerText.Length);
@@ -40,6 +40,7 @@ public class LettersPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     private int[] GetRandomIntArray(int length)
@@ -72,6 +73,8 @@ public class LettersPanel : MonoBehaviour
                 b.GetComponentInChildren<Text>().text = btn.GetComponentInChildren<Text>().text;
                 btn.interactable = false;
                 btn.transform.Translate(0, 10000, 0);
+                gameCreation.Game.CountLetters++;
+                
                 return;
             }
         }

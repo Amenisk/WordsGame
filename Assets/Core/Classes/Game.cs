@@ -12,6 +12,7 @@ namespace Assets.Core.Classes
 
         private QuestionsList _list = new QuestionsList();
 
+        public int CountLetters { get; set; }
         public Game()
         {
             ChangeQuestion();
@@ -20,6 +21,11 @@ namespace Assets.Core.Classes
         public void ChangeQuestion()
         {
             CurrentQuestion = _list.GetRandomQuestion();
+        }
+
+        public bool CheckAnswer()
+        {
+            return CountLetters == CurrentQuestion.AnswerText.Length;
         }
     }
 }
