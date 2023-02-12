@@ -648,7 +648,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 105457783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u041D\u0430\u0443\u043A\u0430"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &105457783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,7 +1646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 226523556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0418\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &226523556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,7 +2883,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1847875744}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OpenGame
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5340,7 +5364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097978356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097978356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6287,7 +6323,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1322195836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0421\u043F\u043E\u0440\u0442"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1322195836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9895,7 +9943,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2024027045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0417\u0430\u043A\u043E\u043D\u0447\u0438 \u0444\u0440\u0430\u0437\u0443"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2024027045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10296,7 +10356,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2082655200}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0416\u0438\u0432\u043E\u0439 \u043C\u0438\u0440"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2082655200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10502,7 +10574,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2102297089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847875744}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OpenGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u041A\u0438\u043D\u043E"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2102297089
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,10 +11,11 @@ namespace Assets.Scripts
     public class GameCreation : MonoBehaviour
     {
         public Game Game;
+        private GameManager _gameManager;
 
         void Awake()
         {
-            Game = new Game();
+             Game = new Game(); 
         }
         void Update()
         {

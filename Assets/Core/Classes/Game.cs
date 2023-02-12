@@ -12,20 +12,40 @@ namespace Assets.Core.Classes
 
         private QuestionsList _list = new QuestionsList();
 
+        private string _typeQuestion;
+
         public int CountLetters { get; set; }
         public Game()
         {
             ChangeQuestion();
         }
 
+        public Game(string typeQuestion)
+        {
+            _typeQuestion = typeQuestion;
+            ChangeQuestion();
+        }
+
         public void ChangeQuestion()
         {
-            CurrentQuestion = _list.GetRandomQuestion();
+            if(_typeQuestion != null)
+            {
+                CurrentQuestion = _list.GetRandomQuestion(_typeQuestion);
+            }
+            else
+            {
+                CurrentQuestion = _list.GetRandomQuestion();
+            }
         }
 
         public bool CheckAnswer()
         {
             return CountLetters == CurrentQuestion.AnswerText.Length;
+        }
+
+        public void SetType(string typeQuestion)
+        {
+            _typeQuestion = typeQuestion;
         }
     }
 }

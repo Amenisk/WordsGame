@@ -17,6 +17,22 @@ public class LettersPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FillPanel();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void FillPanel()
+    {
+        foreach(Transform button in _lettersPanel.transform)
+        {
+            Destroy(button.gameObject);
+        }
+       
         Question question = gameCreation.Game.CurrentQuestion;
 
         int countLetters = 0;
@@ -35,12 +51,6 @@ public class LettersPanel : MonoBehaviour
             }
             btn.GetComponent<Button>().onClick.AddListener(() => ChooseLetterButton(btn.GetComponent<Button>()));
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private int[] GetRandomIntArray(int length)

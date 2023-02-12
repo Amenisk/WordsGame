@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    GameObject shop;
+    public string TypeQuestion { get; private set; } = "Иcтория";
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +24,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void OpenGame()
+    public void OpenGame(string typeQuestion)
     {
+        TypeQuestion = typeQuestion;
         SceneManager.LoadScene("GameScene");
     }
 
